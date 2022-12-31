@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang = 'ru'>
+    <head>
+        <meta charset = 'utf-8'>
+        <title>Крестики - нолики</title>
+        <script src="tic-tac-toe.js"></script>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="instruction">
+            <h3>Добро пожаловать!</h3>
+            <p>Выберите за кого Вы будете играть: крестики или нолики?</p>
+            <form name="f">
+            <input type="radio" value="Крестики" name="player" id="cross">Крестики
+            <input type="radio" value="Нолики" name="player" id="zero">Нолики
+            <br><br>
+            <input type="button" value="Начать" onclick="start()">
+            </form>
+
+        </div>
+        <table class="board">
+            <tr>
+                <td onclick="play(1),ready()"><img src='cross.png' class="notplayed" id="cross_1"><img src='zero.png' class="notplayed" id="zero_1"></td>
+                <td onclick="play(2),ready()"><img src='cross.png' class="notplayed" id="cross_2"><img src='zero.png' class="notplayed" id="zero_2"></td>
+                <td onclick="play(3),ready()"><img src='cross.png' class="notplayed" id="cross_3"><img src='zero.png' class="notplayed" id="zero_3"></td>
+            </tr>
+            <tr>
+                <td onclick="play(4),ready()"><img src='cross.png' class="notplayed" id="cross_4"><img src='zero.png' class="notplayed" id="zero_4"></td>
+                <td onclick="play(5),ready()"><img src='cross.png' class="notplayed" id="cross_5"><img src='zero.png' class="notplayed" id="zero_5"></td>
+                <td onclick="play(6),ready()"><img src='cross.png' class="notplayed" id="cross_6"><img src='zero.png' class="notplayed" id="zero_6"></td>
+            </tr>
+            <tr>
+                <td onclick="play(7),ready()"><img src='cross.png' class="notplayed" id="cross_7"><img src='zero.png' class="notplayed" id="zero_7"></td>
+                <td onclick="play(8),ready()"><img src='cross.png' class="notplayed" id="cross_8"><img src='zero.png' class="notplayed" id="zero_8"></td>
+                <td onclick="play(9),ready()"><img src='cross.png' class="notplayed" id="cross_9"><img src='zero.png' class="notplayed" id="zero_9"></td>
+            </tr>
+        </table>
+
+    </body>
+</html>

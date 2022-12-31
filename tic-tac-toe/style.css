@@ -1,0 +1,29 @@
+body {
+background-color:green;
+}
+.board {
+    background-color: white;
+border: black 2px solid;
+border-collapse: collapse;
+position:absolute;
+left:30%;
+}
+.board td {
+    border:black 1px solid;
+    width:200px;
+    height:200px;
+}
+.instruction {
+    position:absolute;
+    background-color: gray;
+    width:25%;
+    height:900px;
+    padding: 20px;
+}
+.notplayed {
+    display:none;
+}
+.played {
+    display: block;
+    width: inherit;
+}
