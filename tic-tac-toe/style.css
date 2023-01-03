@@ -70,8 +70,7 @@ body {
     background-color: white;
     border: white 4px solid;
     border-collapse: collapse;
-    position:absolute;
-    left:30%;
+    margin:auto; 
 }
 .board td {
     border:black 2px solid;

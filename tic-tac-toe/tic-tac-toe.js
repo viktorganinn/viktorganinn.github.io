@@ -22,12 +22,16 @@ function start(n) {
     document.getElementById('o-win').className = 'result-notseen';
 }
 function play(n) {
+    let squareOpponent, square;
     if (document.getElementById('cross').checked) {
-        let square = 'cross_' + n;
-        document.getElementById(square).className = 'played';
+        squareOpponent = 'zero_' + n;
+        square = 'cross_' + n;
     }
     if (document.getElementById('zero').checked) {
-        let square = 'zero_' + n;
+        squareOpponent = 'cross_' + n;
+        square = 'zero_' + n;
+    }
+    if (document.getElementById(squareOpponent).className == 'notplayed') {
         document.getElementById(square).className = 'played';
     }
 }
@@ -261,7 +265,6 @@ if (counter != 0 ) {
     if (document.getElementById('cross').checked) {
         newSquare = 'zero_' + newSym;
         document.getElementById(newSquare).className = 'played';
-        //если срабатывает эта часть, следующая не должна
     } else {
         newSquare = 'cross_' + newSym;
         document.getElementById(newSquare).className = 'played';
@@ -291,10 +294,12 @@ for (key in comb) {
         if ((comb[key][0] == comb[key][1])&&(comb[key][1] == comb[key][2])&&(comb[key][2] == 'x')) {
             document.getElementById('x-win').className = 'result-seen';
             startAgain();
+            break;
         }
-        if ((comb[key][0] == comb[key][1])&&(comb[key][1] == comb[key][2])&&(comb[key][2] == 'o')) {
+if ((comb[key][0] == comb[key][1])&&(comb[key][1] == comb[key][2])&&(comb[key][2] == 'o')) {
             document.getElementById('o-win').className = 'result-seen';
             startAgain();
+            break;
         }
 }
 counter = 0;
