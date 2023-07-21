@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset = 'UTF-8'>
+        <title>Just skulls</title>
+        <script src = 'script.js'></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body style="background-color: silver;">
+        <div class="pannel">
+            <b>Instructions:</b>
+            <p>To move the character press the buttons on your keyboard. Hold right (left) arrow - to move right (left).</p>
+            <b>Some technical info:</b>
+            <p id="text">The key has not been pressed yet</p>
+            <p id="condition">The person stands</p>
+            <p id="margin">Margin Left is 0px</p>
+            <p id="hp_condition">Your have not got any losses yet</p>
+            <b id="hp_text">Your Health Points are here:</b>
+            <br>
+            <img src="character/health.png" class="hp" id="hp_3" style="display: inline-block;">
+            <img src="character/health.png" class="hp" id="hp_2" style="display: inline-block;">
+            <img src="character/health.png" class="hp" id="hp_1" style="display: inline-block;">
+            <br>
+            <b>Also wanna add:</b>
+            <ol>
+                <li>Apples that give you health points (not necessary);</li>
+                <li>Combinations Shift + Right/Left Arrow to speed up;</li>
+                <li>Possibility for skulls to flicker asynchronously;</li>
+                <li>Skulls shoud not lie down on each other!!</li>
+            </ol>
+        </div>
+        <div style="height:400px;" class="board">
+            <img src="character/stands.jpg" class="person" style="margin: 0px; margin-top: 10px; width:100px; height:70px;" id="block_1" name="stands">
+
+            <table class="table-grid">
+
+                <tr><td class="td-grid">              
+                </td></tr>
+
+                <tr><td class="td-grid">
+                </td></tr>
+
+                <tr><td class="td-grid">
+                </td></tr>
+
+                <tr><td class="td-grid">
+                </td></tr>
+
+                <tr><td class="td-grid">
+                </td></tr>
+
+            </table>
+            <img src="character/finish.png" class="finish">
+            <img src="character/skull.png" class="skull" style="margin-top: 40px; margin-left: 200px;" id="skull_1">
+
+        </div>
+    </body>
+</html>
