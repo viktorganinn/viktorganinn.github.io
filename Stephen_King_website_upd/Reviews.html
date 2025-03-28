@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Stephen King Website - Рецензии</title>
+        <link rel="stylesheet" href="Style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap" rel="stylesheet">
+        <script src="Stephen_King.js"></script>
+    </head>
+    <body>
+        <nav class="fixed-nav">
+            <table>
+                <tr>
+                    <td> <a href="https://stephenking.com/" target="_blank"><img src="https://preview.redd.it/4h6sd53dm7f21.jpg?auto=webp&s=92de225c012af3cc29e440a2aacf4fb528e9d8a9" style="height:50px;"></a></td>
+                    <td width="26%"><h1><a href="index.html" onmouseover="drop()" onmouseout="hide()" class="active"> <img src="logo.png" style="width: 30px; vertical-align: middle; margin-right: 5px;">Главная</a></h1></td>
+                    <td width="25%"><h1><a href="Bibliography.html">Библиография</a></h1></td>
+                    <td width="15%"><h1><a href="Books.html">Книги</a></h1></td>
+                    <td width="21%"><h1><a href="Reviews.html">Рецензии</a></h1></td>  
+            </table>
+        </nav>
+        <div id="main-page-anchors" class="invisible" onmouseover="drop()" onmouseout="hide()">
+            <p><a href="index.html#about-author">Немного об авторе</a></p>
+            <p><a href="index.html#quotes">Лучшие высказывания</a></p>
+            <p><a href="index.html#gallery">Галерея</a></p>
+        </div>
+        <main>
+            <form name="f" action="http://185.182.111.214:7628/cgi-bin/form_action.py" method='get' target='_self' style="margin-top:80px;">
+                <div class="flex">
+            <div class="feedback">
+                    <table>
+                        <tr>
+                            <td class="td1"><label>Фамилия</label></td>
+                            <td class="td2"><input type="text" name="surname" class="txt-inp"></td>
+                        </tr>
+                        <tr>
+                            <td class="td1"><label>Имя*</label></td>
+                            <td class="td2"><input type="text" name="name" required class="txt-inp"></td>
+                        </tr>
+                        <tr>
+                            <td class="td1"><label>Отчество</label></td>
+                            <td class="td2"><input type="text" name="fathersname" class="txt-inp"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="td1"><label>Электронная почта*</label></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="td2"><input type="email" name="mail" required class="txt-inp"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="td1">Какую книгу Вы хотели бы оценить?*</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="td2">
+                                <select name="book" onclick="picture()" required style="width:45%; font-weight: 400; font-family:'Raleway', sans-serif; font-size:15px;">
+                                    <option>Выберите книгу</option>
+                                    <option value="book1">Чужак</option>
+                                    <option value="book2">Институт</option>
+                                    <option value="book3">Билли Саммерс</option>
+                                    <option value="book4">Кладбище домашних животных</option>
+                                    <option value="book5">Кто нашел, берет себе</option>
+                                    <option value="book6">Долгая прогулка</option>
+                                    <option value="book7">Лавка дурных снов</option>
+                                    <option value="book8">Под куполом</option>
+                                    <option value="book9">Кристина</option>
+                                    <option value="book10">Мистер Мерседес</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><img name="pict" width="70%" style="margin-right:50px;"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="area">
+                    <textarea name="text" cols="85" rows="10" placeholder="Введите что-нибудь..." required style="font-family:'Raleway', sans-serif; font-size: 25px;"></textarea>
+                    <input type="checkbox" name="agr" value="agree" required> <label style="font-weight:300; font-size: 20px;">Согласен на обработку персональных данных</label><br>
+                    <input type="Submit" value="Отправить" class="button" id="bt1">
+                    <input type="Reset" value="Очистить" class="button" id="bt2">
+                </div>
+                </div>
+            </form>
+            <div class="published">
+                <div class="text-review">
+                    <h2>Кладбище домашних животных</h2>
+                    <p>Со Стивеном Кингом я давно знакома. Но эту книгу все никак не могла настроиться прочесть, и видимо не зря… Произведение не особо динамичное, но и скучным или «пустым» его точно не назовешь. Я прерывала чтение несколько раз, не могла сдержать слезы или чувство страха и опустошенности. Настолько все естественно и ясно описано, все эмоции, обстановки, природа и главное постоянные диалоги с самим собой. Все это очень затягивает и погружает в книгу, но погружаясь в нее становится жутко. Это произведение не назовёшь эпичным, оно не вызывает эмоций вроде «Вау», наоборот, хочется уйти в себя, переварить прочитанное, найти в себе силы улыбаться. Однозначно советую к прочтению, особенно людям эмоциональным.</p>
+                    <p>Анна, 09.11.2022</p>
+                    </div>
+                    <img src="Книги/book4.jpeg" class="illustration" style="right:80px; top:130px;">
+                    <div class="text-review">
+                        <h2>Кто нашел, берет себе</h2>
+                        <p>Роман типичен для позднего Кинга, увлекающегося детективными мотивами в своей прозе. Рассказчик он великолепный, хотя сама фабула романа простенькая. И не обращайте внимания на комментарии наивных критиков, усмотревших ошибки и опечатки в переводе. Видимо, они просто не подозревают о системе речевой характеристики персонажа, когда автор вынужден передавать неправильную письменную или устную речь именно с теми ошибками, кои свойственны данному герою. Наивно заствалять уголовников изъясняться языком Петрарки. Так что переводчик Вебер тут не виновен.</p>
+                        <p>Павел, 17.10.2022</p>
+                    </div>
+                    <img src="Книги/book5.jpeg" class="illustration" style="right:80px; top:655px;">
+                    <div class="text-review">
+                        <h2>Лавка дурных снов</h2>
+                        <p>Отличный сборник, Кинг абсолютно прав, утверждая про себя, что лучше всего ему удаются именно рассказы.
+                            "В этом автобусе -- другой мир" и ему подобные, это просто великолепно, очень похоже на некоторые рассказы Селинджера.</p>
+                        <p>Валерий, 01.10.2022</p>
+                    </div>
+                    <img src="Книги/book7.jpeg" class="illustration" style="right:80px; top:1150px;">
+                    <div class="text-review">
+                        <h2>Институт</h2>
+                        <p>Книга, увлекающая читателя с первых страниц. Традиционный сюжет: борьба добра и зла. Случайность или рука провидения, заставляющая одного из героев остановиться в глухом городке. Дети, столкнувшиеся с абсолютным злом, с необъяснимой, бессмысленной жестокостью, но всё же готовые бороться. Параллельные сюжетные линии, которые сплетутся воедино, беспощадная схватка и победа добра, но победа, достигнутая дорогой ценой, – всё это характерные особенности произведений Стивена Кинга. Его новая книга «Институт» – настоящий праздник для поклонников фантастики, мистики, саспенса.</p>
+                        <p>Татьяна, 22.03.2022</p>
+                    </div>
+                    <img src="Книги/book2.jpeg" class="illustration" style="right:80px; top:1750px;">
+
+            </div>
+        </main>
+    </body>
+    </html>
